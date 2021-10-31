@@ -250,7 +250,7 @@ def tags():
 
     for tweet in tweets:
         analysis['text'] = tweet
-        analysis['sentiment'] = predict_class(tweet)
+        analysis['sentiment'] = predict_class([tweet])
         final_res.append(analysis)
         analysis = {}
 
